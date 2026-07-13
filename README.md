@@ -63,32 +63,31 @@ Gmail — HTML-formatted leadership digest → Inbox
 | 5 | Tools — Array Aggregator | Collapses Slack rows into a single bundle. |
 | 6 | Google Sheets — Search Rows | Pulls all rows from `Calendar_Events` tab dated within the last 7 days. |
 | 7 | Tools — Array Aggregator | Collapses Calendar rows into a single bundle. |
-| 8 | Google Gemini — Create a Completion | LLM synthesis. Strict JSON output mode, source-tagged items, 5-section schema. |
-| 9 | Gmail — Send an Email | Delivers the HTML-formatted leadership digest to the configured recipient. |
+| 8 | Google Gemini — Create a Completion | LLM synthesis. Strict JSON output mode, source-tagged items, 4-section schema. |
+| 9 | Gmail — Send an Email (Router) | Routes digest output into 4 labeled Gmail folders based on section. |
+| 13 | Gmail — Decisions Made | Delivers decision items to the Decisions Made folder. |
+| 14 | Gmail — Key Meetings | Delivers meeting summaries to the Key Meetings folder. |
+| 15 | Gmail — Needs Leadership Attention | Delivers escalation items to the Needs Leadership Attention folder. |
+| 16 | Gmail — Upcoming Priorities | Delivers priority items to the Upcoming Priorities folder. |
 
 ---
 
 ## 📤 Digest Output Structure
 
-The email is structured for executive readability — color-coded sections, source-tagged items, and an executive summary at the top. Each line carries a `[Notion]`, `[Slack]`, or `[Calendar]` provenance tag.
+The digest is automatically routed into 4 labeled Gmail folders — each section lands where it belongs, with no manual sorting required. Each line carries a `[Notion]`, `[Slack]`, or `[Calendar]` provenance tag.
 
 ```
-📬 Weekly Digest — [date range]
+📌 Decisions Made
+  [Source] Decisions confirmed or finalized this week
 
-Executive Summary
-  2–3 sentences on the most important themes of the week
-
-✅ Wins
-  [Source] What went well
-
-⚠️ Risks
-  [Source] What's at risk or needs intervention
-
-🔄 What Changed
-  [Source] Material changes since last week
+📅 Key Meetings
+  [Source] Key outcomes and action items from meetings
 
 🎯 Needs Leadership Attention
   [Source] Items requiring exec decision or escalation
+
+🔜 Upcoming Priorities
+  [Source] High-priority items coming up next week
 ```
 
 See [`sample-output/sample-digest-email.html`](sample-output/sample-digest-email.html) for a rendered example.
