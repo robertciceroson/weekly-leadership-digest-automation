@@ -17,7 +17,7 @@ A Make.com automation that replaces 3 hours of manual Monday morning report comp
 | **LLM cost per run** | ~$0.01 (Claude Haiku) |
 | **Time saved** | ~3 hours/week → ~150 hours/year |
 | **Status** | Deployed, tested, operational |
-
+| **Output (interactive)** | [Executive Weekly Briefing Dashboard](https://robertciceroson.github.io/process-engineering-portfolio/executive-dashboard/) — live front-end view of the same leadership reporting data |
 ---
 
 ## 🎯 Problem
@@ -88,10 +88,12 @@ The digest is automatically routed into 4 labeled Gmail folders — each section
 
 🔜 Upcoming Priorities
   [Source] High-priority items coming up next week
+
 ```
 
 See [`sample-output/sample-digest-email.html`](sample-output/sample-digest-email.html) for a rendered example.
 
+For an interactive front-end that renders the same leadership data with filters and collapsible sections, see the [Executive Weekly Briefing Dashboard](https://robertciceroson.github.io/process-engineering-portfolio/executive-dashboard/) — live demo.
 ---
 
 ## 🧠 Key Design Decisions
