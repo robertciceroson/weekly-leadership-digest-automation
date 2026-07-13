@@ -31,6 +31,8 @@ Then writing a coherent digest and emailing it to leadership.
 
 This scenario eliminates that entirely.
 
+📊 [View the full VSM — current vs. future state](https://github.com/robertciceroson/process-engineering-portfolio/blob/main/executive-report-automation-vsm.pdf)
+
 ---
 
 ## 🏗️ Architecture
