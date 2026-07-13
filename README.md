@@ -198,6 +198,7 @@ The LLM module and Gmail module require no changes for this upgrade.
 
 ## 💡 Related Portfolio Projects
 
+- [Executive Weekly Briefing Dashboard](https://robertciceroson.github.io/process-engineering-portfolio/executive-dashboard/) — the interactive HTML front-end that surfaces the same leadership reporting data (filter bar, badge filtering, collapsible sections — live demo)
 - [AI Workflow ROI Analysis](https://docs.google.com/spreadsheets/d/1EVz2vaeOSHu5mjn9EpmmQTRi55DBbRtIgxBc3a2PN_I/) — quantifying automation value
 - [HR Policy QA Bot](https://hr-policy-app-bot-mfgzhuyzqgkkdglxg4mnj2.streamlit.app) — RAG pipeline (LangChain + FAISS + Llama 3.3 70B)
 - [Process Engineering Portfolio](https://github.com/robertciceroson/process-engineering-portfolio) — 19 VSM + BPMN diagrams
